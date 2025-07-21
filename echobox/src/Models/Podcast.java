@@ -20,8 +20,13 @@ public class Podcast extends Audio implements Informacoes{
 
     @Override
     public void informacoes() {
-        System.out.println("Apresentador: " + getPresenter());
-        System.out.println("Descrisão: " + getDescription());
+        System.out.println("Título: " + getTitle());
+        System.out.println("Apresentador: " + presenter);
+        System.out.println("Descrição: " + description);
         System.out.println("Duração: " + getDuration() + " minutos");
+        System.out.println("Curtidas: " + getTotalLikes());
+        System.out.println("Reproduções: " + getTotalPlays());
+        System.out.println("Classificação: " + getClassification());
     }
+
 }

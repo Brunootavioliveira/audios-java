@@ -32,10 +32,15 @@ public class Sounds extends Audio implements Informacoes{
 
     @Override
     public void informacoes() {
-        System.out.println("Cantor: " + getSinger());
-        System.out.println("Album: " + getAlbum());
-        System.out.println("Gênero: " + getGenre());
-        System.out.println("Ano de lançamento: " + getYearOfRelease());
+        System.out.println("Título: " + getTitle());
+        System.out.println("Cantor: " + singer);
+        System.out.println("Álbum: " + album);
+        System.out.println("Gênero: " + genre);
+        System.out.println("Ano de lançamento: " + yearOfRelease);
         System.out.println("Duração: " + getDuration() + " minutos");
+        System.out.println("Curtidas: " + getTotalLikes());
+        System.out.println("Reproduções: " + getTotalPlays());
+        System.out.println("Classificação: " + getClassification());
     }
+
 }

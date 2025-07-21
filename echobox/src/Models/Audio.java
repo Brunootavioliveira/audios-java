@@ -5,38 +5,23 @@ public class Audio {
     private double duration;
     private int totalPlays;
     private int totalLikes;
-    private String classification;
 
     public Audio(String title, double duration) {
         this.title = title;
         this.duration = duration;
     }
 
-    public String getTitle() {
-        return title;
-    }
+    public String getTitle() { return title; }
+    public double getDuration() { return duration; }
+    public int getTotalPlays() { return totalPlays; }
+    public int getTotalLikes() { return totalLikes; }
 
-    public double getDuration() {
-        return duration;
-    }
-
-    public int getTotalPlays() {
-        return totalPlays;
-    }
-
-    public int getTotalLikes() {
-        return totalLikes;
-    }
+    public void play() { this.totalPlays++; }
+    public void like() { this.totalLikes++; }
 
     public String getClassification() {
-        return classification;
-    }
-
-    public void plays() {
-        this.totalPlays++;
-    }
-
-    public void like() {
-        this.totalLikes++;
+        if (totalPlays >= 1000 || totalLikes >= 500) return "Popular";
+        if (totalPlays >= 100 || totalLikes >= 50) return "Emergente";
+        return "Novo";
     }
 }
