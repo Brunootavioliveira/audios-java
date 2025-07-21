@@ -5,13 +5,13 @@ Este projeto Java simula uma plataforma de gerenciamento e reprodução de áudi
 ## 📁 Estrutura do Projeto
 
 echobox/
-├── src/
-│ ├── Main.java
-│ └── Models/
-│ ├── Audio.java
-│ ├── Informacoes.java
-│ ├── Podcast.java
-│ └── Sounds.java
+- ├── src/
+- │ ├── Main.java
+- │ └── Models/
+- │ ├── Audio.java
+- │ ├── Informacoes.java
+- │ ├── Podcast.java
+- │ └── Sounds.java
 
 
 ## 💡 Funcionalidades
